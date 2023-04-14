@@ -1,0 +1,19 @@
+{
+ "act_name": "REF_SRV_STATE-DRAFT-VALIDATED",
+ "act_type": "O",
+ "act_async": "0",
+ "act_job_depth": null,
+ "act_method": null,
+ "act_script": null,
+ "act_url": null,
+ "act_image": null,
+ "act_confirm": true,
+ "act_confirm_expr": null,
+ "act_confirm_ui": null,
+ "act_plus": null,
+ "act_comment": "Transition",
+ "row_module_id__mdl_name": "Referentiel",
+ "act_exec": null,
+ "act_count": null,
+ "act_order": null
+}

@@ -1,0 +1,7 @@
+{
+ "stg_transition_id__stm_name": "REF_SRV_STATE-VALIDATED-DRAFT",
+ "stg_group_id__grp_name": "REF_ADMIN",
+ "stg_activ": true,
+ "stg_object_id__obo_name": "RefServiceLine",
+ "row_module_id__mdl_name": "Referentiel"
+}

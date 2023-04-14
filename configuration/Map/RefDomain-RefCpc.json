@@ -1,0 +1,8 @@
+{
+ "map_domain_id__obd_name": "RefDomain",
+ "map_object_id__obj_name": "RefCpc",
+ "map_process_id__pcs_name": null,
+ "map_order": 1000,
+ "map_ext": false,
+ "row_module_id__mdl_name": "Referentiel"
+}

@@ -1,0 +1,11 @@
+{
+ "viw_name": "ReferentielScope",
+ "viw_ui": null,
+ "viw_order": 1,
+ "viw_icon": "img/color/address",
+ "viw_disp_id__dis_code": null,
+ "viw_scope": "ReferentielScope",
+ "row_module_id__mdl_name": "Referentiel",
+ "viw_theme_id__thm_name": null,
+ "viw_lang": null
+}

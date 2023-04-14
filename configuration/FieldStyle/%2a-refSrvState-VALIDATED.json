@@ -1,0 +1,10 @@
+{
+ "sty_object": "*",
+ "sty_field": "refSrvState",
+ "sty_value": "VALIDATED",
+ "sty_vmin": null,
+ "sty_vmax": null,
+ "sty_style": "greenbg",
+ "sty_image": null,
+ "row_module_id__mdl_name": "Referentiel"
+}

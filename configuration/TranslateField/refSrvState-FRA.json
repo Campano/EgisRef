@@ -1,0 +1,12 @@
+{
+ "tsl_typeField": "F",
+ "tsl_id__fld_name": "refSrvState",
+ "tsl_lang": "FRA",
+ "tsl_value": "Ref srv state",
+ "tsl_simplehelp": null,
+ "tsl_short_value": null,
+ "tsl_placeholder": null,
+ "tsl_listhelp": null,
+ "row_module_id__mdl_name": "Referentiel",
+ "tsl_tooltip": null
+}

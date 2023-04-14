@@ -1,0 +1,12 @@
+{
+ "tsl_typeField": "F",
+ "tsl_id__fld_name": "refCpcSrvId",
+ "tsl_lang": "ENU",
+ "tsl_value": "Service Line",
+ "tsl_simplehelp": null,
+ "tsl_short_value": null,
+ "tsl_placeholder": null,
+ "tsl_listhelp": null,
+ "row_module_id__mdl_name": "Referentiel",
+ "tsl_tooltip": null
+}

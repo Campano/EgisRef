@@ -1,0 +1,14 @@
+{
+ "sta_lovname": "REF_SRV_STATE",
+ "sta_state_id__lov_list_id__lov_name": "REF_SRV_STATE",
+ "sta_state_id__lov_code": "VALIDATED",
+ "sta_state": "VALIDATED",
+ "sta_label": "Validated",
+ "sta_activ": true,
+ "sta_terminal": false,
+ "sta_read": false,
+ "sta_access": true,
+ "sta_timeout": null,
+ "sta_alert_id__alt_name": null,
+ "row_module_id__mdl_name": "Referentiel"
+}

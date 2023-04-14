@@ -1,0 +1,16 @@
+{
+ "mod_name": "RefModel",
+ "mod_template_id__mtp_name": "ModelBusinessObject",
+ "mod_doc": {
+  "path": "files/Model/RefModel.svg",
+  "mime": "image/svg+xml",
+  "name": "model.svg"
+ },
+ "mod_json": null,
+ "mod_image": {
+  "path": "files/Model/RefModel.png",
+  "mime": "image/png",
+  "name": "RefModel.png"
+ },
+ "row_module_id__mdl_name": "Referentiel"
+}

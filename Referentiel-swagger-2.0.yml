@@ -1,0 +1,687 @@
+#  ___ _            _ _    _ _    __
+# / __(_)_ __  _ __| (_)__(_) |_ /_/
+# \__ \ | '  \| '_ \ | / _| |  _/ -_)
+# |___/_|_|_|_| .__/_|_\__|_|\__\___|
+#             |_| Module: Referentiel 1
+basePath: /api
+paths:
+  /rest/RefCpc/{row_id}:
+    post:
+      summary: Create a new RefCpcbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-refcpc-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RefCpc'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RefCpc'
+        in: body
+        name: body
+      tags:
+      - RefCpc
+      consumes:
+      - application/json
+    get:
+      summary: Get a RefCpc business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-refcpc-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RefCpc'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RefCpc
+    delete:
+      summary: Delete a RefCpc business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-refcpc-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RefCpc
+    put:
+      summary: Update a RefCpcbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-refcpc-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RefCpc'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RefCpc'
+        in: body
+        name: body
+      tags:
+      - RefCpc
+      consumes:
+      - application/json
+  /rest/RefServiceLine/{row_id}:
+    post:
+      summary: Create a new RefServiceLinebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-refserviceline-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RefServiceLine'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RefServiceLine'
+        in: body
+        name: body
+      tags:
+      - RefServiceLine
+      consumes:
+      - application/json
+    get:
+      summary: Get a RefServiceLine business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-refserviceline-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RefServiceLine'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - RefServiceLine
+    delete:
+      summary: Delete a RefServiceLine business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-refserviceline-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - RefServiceLine
+    put:
+      summary: Update a RefServiceLinebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-refserviceline-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/RefServiceLine'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/RefServiceLine'
+        in: body
+        name: body
+      tags:
+      - RefServiceLine
+      consumes:
+      - application/json
+  /login:
+    get:
+      summary: Login (obtain bearer token)
+      security:
+      - basicAuth: []
+      produces:
+      - text/plain
+      - application/json
+      operationId: login
+      responses:
+        '200':
+          description: Successful login
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+      parameters:
+      - in: query
+        name: _output
+        description: Optional output format
+        type: string
+        required: false
+        enum:
+        - json
+        - oauth2
+        - token
+      tags:
+      - session
+  /logout:
+    get:
+      summary: Logout (revoke bearer token)
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: logout
+      responses:
+        '200':
+          description: Successfull logout
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+      tags:
+      - session
+  /rest/RefCpc:
+    get:
+      summary: Search RefCpc business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-refcpc-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRefCpc'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: refCpcCode
+        description: Search filter for Code
+        type: string
+        required: false
+      - in: query
+        name: refCpcLabel
+        description: Search filter for Label
+        type: string
+        required: false
+      - in: query
+        name: refCpcSrvId
+        description: Search filter for Service Line
+        type: string
+        required: false
+      - in: query
+        name: refCpcSrvId__refSrvLabel
+        description: Search filter for Service Line Label
+        type: string
+        required: false
+      tags:
+      - RefCpc
+  /:
+    get:
+      summary: Get user session information
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: info
+      responses:
+        '200':
+          description: Success in getting user session information
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+      parameters:
+      - in: query
+        name: texts
+        description: Texts?
+        type: boolean
+        required: false
+      tags:
+      - session
+  /rest/RefServiceLine:
+    get:
+      summary: Search RefServiceLine business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-refserviceline-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfRefServiceLine'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: refSrvLabel
+        description: Search filter for Label
+        type: string
+        required: false
+      - in: query
+        name: refSrvState
+        description: Search filter for State
+        type: string
+        required: false
+        enum:
+        - DRAFT
+        - VALIDATED
+      tags:
+      - RefServiceLine
+securityDefinitions:
+  basicAuth:
+    type: basic
+  bearerAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+definitions:
+  Error404:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 404
+  ArrayOfRefServiceLine:
+    type: array
+    items:
+      $ref: '#/definitions/RefServiceLine'
+  PublicationResult:
+    type: object
+    properties:
+      mime:
+        description: MIME type
+        type: string
+      content:
+        description: Content (plain text or base64 encoded)
+        type: string
+  PlaceData:
+    type: object
+    properties:
+      coord:
+        description: Geographical coordinates
+        type: string
+      address:
+        description: Address
+        type: string
+      row_id:
+        description: Row ID
+        type: string
+      label1:
+        description: 'Label #1'
+        type: string
+      label2:
+        description: 'Label #2'
+        type: string
+      label3:
+        description: 'Label #3'
+        type: string
+  PlaceMapData:
+    type: object
+    properties:
+      places:
+        description: Places
+        type: array
+        items:
+          $ref: '#/definitions/PlaceData'
+      name:
+        description: Name
+        type: string
+  RefCpc:
+    type: object
+    properties:
+      refCpcSrvId__refSrvLabel:
+        description: Service Line Label
+        type: string
+      refCpcSrvId:
+        description: Service Line
+        type: string
+      refCpcLabel:
+        description: Label
+        type: string
+      row_id:
+        description: Unique technical row ID
+        type: string
+      refCpcCode:
+        description: Code
+        type: string
+  RefServiceLine:
+    type: object
+    properties:
+      refSrvLabel:
+        description: Label
+        type: string
+      row_id:
+        description: Unique technical row ID
+        type: string
+      refSrvState:
+        description: State
+        type: string
+        enum:
+        - DRAFT
+        - VALIDATED
+  ActionResult:
+    type: object
+    properties:
+      result:
+        description: Action result
+        type: string
+  TreeviewData:
+    type: object
+    properties:
+      item:
+        description: Object item with lists of linked objects' items
+        type: object
+  ArrayOfRefCpc:
+    type: array
+    items:
+      $ref: '#/definitions/RefCpc'
+  Error400:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 400
+  Error401:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 401
+  Error500:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 500
+  Error403:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 403
+swagger: '2.0'
+info:
+  license:
+    name: Simplicite license
+    url: http://www.simplicitesoftware.com
+  contact:
+    name: Simplicite Software
+    url: http://www.simplicitesoftware.com
+    email: contact@simplicitesoftware.com
+  description: API for module Referentiel
+  title: Referentiel
+  version: '1'
+tags:
+- name: RefCpc
+  description: CPC
+- name: RefServiceLine
+  description: Service Line

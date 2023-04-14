@@ -1,0 +1,11 @@
+{
+ "grp_name": "REF_ADMIN",
+ "grp_comment": null,
+ "grp_type": [
+  "G",
+  "W"
+ ],
+ "grp_parent_id__grp_name": null,
+ "grp_home_id__viw_name": "ReferentielScope",
+ "row_module_id__mdl_name": "Referentiel"
+}
